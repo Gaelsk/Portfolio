@@ -60,11 +60,6 @@ a {
     text-decoration: none;
     color: #333;
 }
-.show {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
 .section-1 {
     margin-top: 4.5rem;
 }
@@ -124,6 +119,11 @@ footer p {
     }
     header {
         margin-bottom: 0;
+    }
+    .show {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
     nav ul {
         display: none;
