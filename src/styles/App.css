@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    background-image: url("../images/Groupe\ 4.png");
+}
+p, section ul li {
+    line-height: 1.7;
+}
+.container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: #333;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+nav li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 1.2rem;
+    padding: 6px;
+}
+nav li span {
+    display: block;
+    position: relative;
+    margin-bottom: 0;
+    transition: 0.4s;
+    cursor: pointer;
+}
+nav span:after, .active:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 0;
+    bottom: -5px;
+    background-color: teal;
+    height: 5px;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+nav span:hover:after {
+    left: 0;
+    right: auto;
+    width: 100%;
+}
+.active:after {
+    left: 0;
+    right: auto;
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+.show {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.section-1 {
+    margin-top: 4.5rem;
+}
+.section-1 h3 {
+    color: #6E6E6E;
+}
+section {
+    margin: 5.5rem 0;
+}
+#contacts {
+    margin-top: 9rem;
+    margin-bottom: 0;
+}
+.profile-image {
+    display: block;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-image: url("../images/4.jpg");
+    background-size: cover;
+    margin: 0 auto -1.5rem auto;
+    cursor: pointer;
+}
+.ProjectList {
+    display: flex;
+    flex-wrap: wrap;
+}
+footer p {
+    margin: 3px 0;
+    text-align: center;
+}
+.d-flex {
+    display: flex;
+    justify-content: center;
+}
+.d-flex p {
+    margin: 0 2rem;
+}
+.not-found-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.not-found {
+    margin-top: 5rem;
+    width: 300px;
+    height: 200px;
+    background-color: #f1f1f1;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        font-size: 1.1rem;
+        padding: 0.9rem;
+    }
+    header {
+        margin-bottom: 0;
+    }
+    nav ul {
+        display: none;
+    }
+    nav li {
+        margin: 0.4rem -2rem;
+    }    
+    section {
+        margin: 5rem 0;
+    }
+    .section-1 {
+        margin: 1rem 0;
+    }
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+    section ul{
+        margin-left: -1rem;
+    }
+    h1, h2, h3 {
+        font-size: 1.5rem;
+    }
+    footer {
+        margin-left: 1rem;
+    }
+    footer p {
+        text-align: left;
+    }
+    .d-flex {
+        flex-direction: column;
+    }
+    .d-flex p {
+        margin: 0;
+    }
+}
