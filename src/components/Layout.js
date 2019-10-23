@@ -9,18 +9,31 @@ const Layout = ({children}) => {
                 <nav>
                     <NavToggler/>
                     <ul>
-                        <li><SectionLink section="about">{
-                          ({onClick}) => (<span onClick={onClick}>About</span>)
-                        }</SectionLink></li>
-                        <li><SectionLink section="skills">{
-                          ({onClick}) => (<span onClick={onClick}>Skills</span>)
-                        }</SectionLink></li>
-                        <li><SectionLink section="projects">{
-                          ({onClick}) => (<span onClick={onClick}>Projects</span>)
-                        }</SectionLink></li>
-                        <li><SectionLink section="contacts">{
-                          ({onClick}) => (<span onClick={onClick}>Contacts</span>)
-                        }</SectionLink></li>
+                        <li>
+                          <SectionLink 
+                            section="about">{
+                            ({onClick}) => (<span onClick={onClick}>About</span>)
+                            }
+                          </SectionLink>
+                        </li>
+                        <li>
+                          <SectionLink section="skills">{
+                            ({onClick}) => (<span onClick={onClick}>Skills</span>)
+                            }
+                          </SectionLink>
+                        </li>
+                        <li>
+                          <SectionLink section="projects">{
+                            ({onClick}) => (<span onClick={onClick}>Projects</span>)
+                           }
+                          </SectionLink>
+                        </li>
+                        <li>
+                          <SectionLink section="contacts">{
+                            ({onClick}) => (<span onClick={onClick}>Contacts</span>)
+                            }
+                          </SectionLink>
+                        </li>
                     </ul>
                 </nav>
             </header>

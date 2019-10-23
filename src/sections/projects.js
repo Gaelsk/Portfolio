@@ -3,7 +3,8 @@ import {SectionTitle} from '../components/StyledText'
 import ProjectCard from '../components/ProjectCard'
 import {graphql, useStaticQuery} from 'gatsby';
 import Icon from '../components/icon'
-import {Section} from 'react-scroll-section'
+import FadeSection from '../components/FadeSection'
+
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -22,7 +23,7 @@ export default () => {
     }
 `)
   return (
-    <Section id="projects">
+    <FadeSection id="projects">
         <SectionTitle>Projects <Icon icon="💻"/></SectionTitle>
         <div className="ProjectList">
             {data.allMarkdownRemark.edges.map(edge => (
@@ -33,6 +34,6 @@ export default () => {
               />
             ))}
         </div>
-    </Section>
+    </FadeSection>
   )
 }

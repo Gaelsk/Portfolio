@@ -1,10 +1,10 @@
 import React from 'react'
 import {SectionTitle} from '../components/StyledText'
-import {Section} from 'react-scroll-section'
+import FadeSection from '../components/FadeSection'
 
 export default () => {
   return (
-      <Section id="skills">
+      <FadeSection id="skills">
           <SectionTitle>Skills</SectionTitle>
           <p>I used to work with many technologies from the frontend to the backend: </p>
           <ul>
@@ -18,6 +18,6 @@ export default () => {
               <li>RestFul api</li>
               <li>GraphQl</li>
           </ul>
-      </Section>
+      </FadeSection>
   )
 }

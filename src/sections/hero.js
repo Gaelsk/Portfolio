@@ -1,10 +1,10 @@
 import React from 'react'
 import {Title, SubTitle} from '../components/StyledText';
-import {Section} from 'react-scroll-section'
+import FadeSection from '../components/FadeSection'
 
 export default () => {
   return (
-      <Section className='section-1'>
+      <FadeSection className='section-1'>
         <Title>Hello, </Title>
         <SubTitle>I'm Gaël HOUNGBEDJI</SubTitle>
         <h3>It's great to have you here</h3>
@@ -13,6 +13,6 @@ export default () => {
           or You have an idea and need help to bring it in reality? or You want to collaborate? or You have  advice for me?
           I'd be delighted to talk with you!  
         </p>
-      </Section>
+      </FadeSection>
   )
 }
