@@ -18,7 +18,7 @@ const ProjectCard = styled.a`
         transform: translateY(-8px);
     }
     & h2 {
-        color: #3d3d3d;
+        color: teal;
     }
 
     @media screen and (max-width: 600px) {
