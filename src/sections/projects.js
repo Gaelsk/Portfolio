@@ -26,8 +26,9 @@ export default () => {
     <FadeSection id="projects">
         <SectionTitle>Projects <Icon icon="💻"/></SectionTitle>
         <div className="ProjectList">
-            {data.allMarkdownRemark.edges.map(edge => (
+            {data.allMarkdownRemark.edges.map((edge, i) => (
               <ProjectCard 
+                key={i}
                 title={edge.node.frontmatter.title} 
                 href={edge.node.frontmatter.href} 
                 description={edge.node.html}

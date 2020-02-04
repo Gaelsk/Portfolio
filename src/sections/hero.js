@@ -4,7 +4,7 @@ import FadeSection from '../components/FadeSection'
 
 export default () => {
   return (
-      <FadeSection className='section-1'>
+      <FadeSection id="first" className='section-1'>
         <Title>Hello, </Title>
         <SubTitle>I'm Gaël HOUNGBEDJI</SubTitle>
         <h3>It's great to have you here</h3>
