@@ -3,4 +3,4 @@ title: "Book Manager"
 href: "https://pacific-retreat-20425.herokuapp.com/"
 ---
 
-A Bookapp based on React, Apollo and a GraphQl Api with CRUD functionalities
+Building a GraphQL api with CRUD functionnalities consumed by a React, Apollo web app.
